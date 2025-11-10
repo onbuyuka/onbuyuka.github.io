@@ -1,2 +1,2 @@
-# onatbuyukakkus.github.io
+# onbuyuka.github.io
 personal website
