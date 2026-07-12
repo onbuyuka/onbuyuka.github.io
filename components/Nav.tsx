@@ -24,13 +24,14 @@ export const Nav: React.FC = () => {
       }`}
     >
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a href="#top" aria-label="Back to top" className="group flex items-center">
-          <span className="animate-gradient-pan rounded-full bg-gradient-to-br from-brand-amber via-brand-rose to-brand-violet bg-[length:200%_auto] p-[2px] transition-transform duration-300 group-hover:scale-110">
-            <img
-              src={`${import.meta.env.BASE_URL}avatar.png`}
-              alt="Onat"
-              className="block h-9 w-9 rounded-full bg-ink-900 object-cover"
-            />
+        <a
+          href="#top"
+          aria-label="Back to top"
+          className="flex items-center font-mono text-lg font-semibold transition-transform duration-300 hover:scale-105"
+        >
+          <span className="text-slate-600">//</span>
+          <span className="ml-1 animate-gradient-pan bg-gradient-to-r from-brand-amber via-brand-rose to-brand-violet bg-[length:200%_auto] bg-clip-text text-transparent">
+            ob
           </span>
         </a>
         <ul className="flex items-center gap-6 text-sm text-slate-400">

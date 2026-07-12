@@ -26,6 +26,16 @@ export const About: React.FC = () => (
           <p className="mt-3 font-display text-3xl font-bold text-white">
             The short version
           </p>
+
+          {/* Illustrated portrait with a soft gradient glow behind it */}
+          <div className="relative mx-auto mt-8 w-full max-w-[190px] md:mx-0 md:max-w-[260px]">
+            <div className="absolute -inset-6 -z-10 rounded-full bg-gradient-to-br from-brand-amber/20 via-brand-rose/20 to-brand-violet/20 blur-2xl" />
+            <img
+              src={`${import.meta.env.BASE_URL}portrait.png`}
+              alt="Illustrated portrait of Onat"
+              className="w-full rounded-[2.5rem] drop-shadow-2xl"
+            />
+          </div>
         </Reveal>
 
         <Reveal delay={80} className="space-y-5 text-lg leading-relaxed text-slate-400">
