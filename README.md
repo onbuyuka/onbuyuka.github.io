@@ -37,7 +37,7 @@ App.tsx               # page composition
 types.ts              # shared types
 components/           # Nav, Hero, About, Projects, ProjectCard, Contact, Icons
 data/projects.ts      # the featured projects list
-public/               # résumé PDF, /squ4re redirect, .nojekyll
+public/               # résumé PDF, avatar/favicon, .nojekyll
 ```
 
 To feature a new project, add an entry to [`data/projects.ts`](data/projects.ts).
