@@ -1,120 +1,113 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Onat Buyukakkus</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onat Buyukakkus — Software Engineer</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <meta name="description" content="Onat Buyukakkus — software engineer with 7+ years in application integration, API ecosystems and ERP platforms. Senior software engineer at Microsoft (Dynamics 365 Business Central). Selected projects and contact." />
+    <meta name="author" content="Onat Buyukakkus" />
+    <!-- Open Graph / Twitter card -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Onat Buyukakkus — Software Engineer" />
+    <meta property="og:description" content="Software engineer specializing in integrations, APIs and ERP platforms. Senior software engineer at Microsoft. Selected side projects and contact." />
+    <meta property="og:url" content="https://onbuyuka.github.io/" />
+    <meta property="og:image" content="https://onbuyuka.github.io/favicon.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Onat Buyukakkus — Software Engineer" />
+    <meta name="twitter:description" content="Software engineer. METU & DTU graduate, senior software engineer at Microsoft." />
+    <meta name="twitter:image" content="https://onbuyuka.github.io/favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+            },
+            colors: {
+              ink: {
+                800: '#1a1720',
+                850: '#141019',
+                900: '#0c0910',
+                950: '#070509',
+              },
+              brand: {
+                amber: '#fbbf24',
+                rose: '#fb7185',
+                violet: '#a78bfa',
+              },
+              accent: {
+                400: '#fb7185',
+                500: '#f43f5e',
+                600: '#e11d48',
+              },
+            },
+            keyframes: {
+              'gradient-pan': {
+                '0%, 100%': { 'background-position': '0% 50%' },
+                '50%': { 'background-position': '100% 50%' },
+              },
+              aurora: {
+                '0%, 100%': { transform: 'translate3d(0,0,0) scale(1)', opacity: '0.55' },
+                '33%': { transform: 'translate3d(6%,-4%,0) scale(1.12)', opacity: '0.75' },
+                '66%': { transform: 'translate3d(-5%,5%,0) scale(0.95)', opacity: '0.5' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-6px)' },
+              },
+            },
+            animation: {
+              'gradient-pan': 'gradient-pan 6s ease infinite',
+              'aurora-slow': 'aurora 22s ease-in-out infinite',
+              'aurora-slower': 'aurora 30s ease-in-out infinite',
+              float: 'float 3s ease-in-out infinite',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body { background-color: #070509; }
+      ::selection { background: rgba(251, 113, 133, 0.35); }
+      html { scrollbar-gutter: stable; }
 
-		<!-- Header -->
-			<section id="header">
-				<header class="major">
-					<h1>Onat Buyukakkus</h1>
-					<p>Welcome to my personal page</p>
-				</header>
-				<div class="container">
-					<ul class="actions">
-						<li><a href="#one" class="button special scrolly">Let's Go</a></li>
-				</div>
-			</section>
+      /* Film-grain overlay so the flat dark stops looking like a template */
+      .grain::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        pointer-events: none;
+        opacity: 0.05;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      }
 
-		<!-- One (Who I am)-->
-			<section id="one" class="main special">
-				<div class="container">
-					<!--span class="image fit primary"><img src="images/bg.jpg" alt="" /></span-->
-					<div class="content">
-						<header class="major">
-							<h2>Who I am</h2>
-						</header>
-						<h6>M.Sc. Graduate ·  Software Engineer</h6></br>
-						Hi! I am Onat, welcome to my page.
-						I have completed my B.Sc. degree on Computer Engineering at <a href="https://www.metu.edu.tr" target="_blank">METU</a> and I have got my M.Sc. degree on Computer Science and Engineering at <a href="https://www.dtu.dk/english" target="_blank">DTU</a>. Right now, I am working as a senior software engineer at <a href="https://www.microsoft.com" target="_blank">Microsoft</span></a>.</br>
-						<!--b>Right now, I am looking for part-time job opportunities so that I can carry on with my studies. I am also open for full-time jobs when I graduate and long term internships during summer. Please feel free to <a href="#footer" class="scrolly">contact</a> me!</b> </br-->
-						You can find more detailed info about me in my <a href="#three" class="scrolly">Resume</a>.
-					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
-				</div>
-			</section>
-
-		<!-- Two (Stuff I Like) -->
-			<!--section id="two" class="main special">
-				<div class="container"-->
-					<!--span class="image fit primary"><img src="images/bg.jpg" alt="" /></span-->
-					<!--div class="content">
-						<header class="major">
-							<h2>Stuff I Like</h2>
-						</header>
-						<p>I don't want to be box standart but here is some stuff I like</p>
-						<ul class="icons-grid">
-							<li>
-								<span class="icon major fa-code"></span>
-								<h3>Coding</h3>
-							</li>
-							<li>
-                                                                <span class="icon major fa-graduation-cap"></span>
-                                                                <h3>Researching</h3>
-                                                        </li>
-							<li>
-								<span class="icon major fa-globe"></span>
-								<h3>Travelling</h3>
-							</li>
-							<li>
-								<span class="icon major fa-futbol-o"></span>
-								<h3>Sports</h3>
-							</li>
-						</ul>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</div>
-			</section-->
-
-		<!-- Three (Resume) -->
-			<section id="three" class="main special">
-				<div class="container">
-					<!--span class="image fit primary"><img src="images/bg.jpg" alt="" /></span-->
-					<div class="content">
-						<header class="major">
-							<h2>Skills and Experience</h2>
-						</header>
-						<a href="Onat%20Buyukakkus_resume.pdf" target="_blank" class="button special icon fa-download">My resume</a>
-						<!--a href="Onat%20Buyukakkus_cv.pdf" target="_blank" class="button special icon fa-download">My CV</a-->
-					</div>
-					<a href="#footer" class="goto-next scrolly">Next</a>
-				</div>
-			</section>
-
-		<!-- Footer (Get in touch) -->
-			<section id="footer">
-				<div class="container">
-					<header class="major">
-						<h2>Get in touch</h2>
-					</header>
-					Feel free to e-mail me! </br>
-					<span class="icon alt fa-envelope"></span> <a href="mailto:onatbuyukakkus@gmail.com?Subject=Hello%20Onat!" target="_top"> onatbuyukakkus@gmail.com</a> </br>
-				</div>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://www.facebook.com/onatbuyukakkus" target="_blank" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/onatxyz" target="_blank" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://www.twitter.com/onatxyz" target="_blank" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://linkedin.com/in/onat-buyukakkus-1b3b54a4" target="_blank" class="icon alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a href="https://www.github.com/onbuyuka" target="_blank" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; 2016</li>
-					</ul>
-				</footer>
-			</section>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+      /* Scroll-reveal */
+      .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal { opacity: 1; transform: none; transition: none; }
+        .animate-aurora-slow, .animate-aurora-slower, .animate-gradient-pan, .animate-float { animation: none !important; }
+      }
+    </style>
+  </head>
+  <body class="grain font-sans text-slate-200 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
