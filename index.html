@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onat Buyukakkus — Software Engineer</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <meta name="description" content="Onat Buyukakkus — software engineer with 7+ years in application integration, API ecosystems and ERP platforms. Senior software engineer at Microsoft (Dynamics 365 Business Central). Selected projects and contact." />
+    <meta name="author" content="Onat Buyukakkus" />
+    <!-- Open Graph / Twitter card -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Onat Buyukakkus — Software Engineer" />
+    <meta property="og:description" content="Software engineer specializing in integrations, APIs and ERP platforms. Senior software engineer at Microsoft. Selected side projects and contact." />
+    <meta property="og:url" content="https://onbuyuka.github.io/" />
+    <meta property="og:image" content="https://onbuyuka.github.io/favicon.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Onat Buyukakkus — Software Engineer" />
+    <meta name="twitter:description" content="Software engineer. METU & DTU graduate, senior software engineer at Microsoft." />
+    <meta name="twitter:image" content="https://onbuyuka.github.io/favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+            },
+            colors: {
+              ink: {
+                800: '#1a1720',
+                850: '#141019',
+                900: '#0c0910',
+                950: '#070509',
+              },
+              brand: {
+                amber: '#fbbf24',
+                rose: '#fb7185',
+                violet: '#a78bfa',
+              },
+              accent: {
+                400: '#fb7185',
+                500: '#f43f5e',
+                600: '#e11d48',
+              },
+            },
+            keyframes: {
+              'gradient-pan': {
+                '0%, 100%': { 'background-position': '0% 50%' },
+                '50%': { 'background-position': '100% 50%' },
+              },
+              aurora: {
+                '0%, 100%': { transform: 'translate3d(0,0,0) scale(1)', opacity: '0.55' },
+                '33%': { transform: 'translate3d(6%,-4%,0) scale(1.12)', opacity: '0.75' },
+                '66%': { transform: 'translate3d(-5%,5%,0) scale(0.95)', opacity: '0.5' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-6px)' },
+              },
+            },
+            animation: {
+              'gradient-pan': 'gradient-pan 6s ease infinite',
+              'aurora-slow': 'aurora 22s ease-in-out infinite',
+              'aurora-slower': 'aurora 30s ease-in-out infinite',
+              float: 'float 3s ease-in-out infinite',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body { background-color: #070509; }
+      ::selection { background: rgba(251, 113, 133, 0.35); }
+      html { scrollbar-gutter: stable; }
+
+      /* Film-grain overlay so the flat dark stops looking like a template */
+      .grain::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        pointer-events: none;
+        opacity: 0.05;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      }
+
+      /* Scroll-reveal */
+      .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal { opacity: 1; transform: none; transition: none; }
+        .animate-aurora-slow, .animate-aurora-slower, .animate-gradient-pan, .animate-float { animation: none !important; }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-CD5AIeKL.js"></script>
+  </head>
+  <body class="grain font-sans text-slate-200 antialiased">
+    <div id="root"></div>
+  </body>
+</html>
