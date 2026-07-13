@@ -11,9 +11,9 @@ export const Projects: React.FC = () => (
         <Eyebrow>projects</Eyebrow>
         <p className="mt-3 font-display text-3xl font-bold text-white">Stuff I’ve built for fun</p>
         <p className="mt-3 text-lg leading-relaxed text-slate-400">
-          Small, self-contained web apps I built to learn something or scratch an itch —
-          football brackets, a paper-trading sandbox, an AI radio DJ. Source is on GitHub;
-          most have a live demo.
+          Small projects I built to learn something or scratch an itch — football brackets,
+          a paper-trading sandbox, an AI radio DJ, a web-grounded WhatsApp bot. Source is on
+          GitHub; most have a live demo.
         </p>
       </Reveal>
 
