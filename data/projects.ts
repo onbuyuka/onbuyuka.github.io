@@ -63,14 +63,4 @@ export const projects: Project[] = [
     repoUrl: 'https://github.com/onbuyuka/7a0-super-lig',
     emoji: '⚽',
   },
-  {
-    title: 'Seçim Pusulası · Election Compass',
-    tagline: 'Find which Turkish political party aligns with your views.',
-    description:
-      'A policy-focused questionnaire inspired by DR.dk’s election compass: answer 19 statements across 7 categories and get ranked results showing your match percentage with each party. Questions are about policy topics, not politicians.',
-    tags: ['React', 'TypeScript', 'Vite', 'Bilingual'],
-    liveUrl: 'https://onbuyuka.github.io/tr-poli-questionnaire/',
-    repoUrl: 'https://github.com/onbuyuka/tr-poli-questionnaire',
-    emoji: '🗳️',
-  },
 ];
