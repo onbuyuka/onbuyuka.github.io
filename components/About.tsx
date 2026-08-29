@@ -40,37 +40,37 @@ export const About: React.FC = () => (
 
         <Reveal delay={80} className="space-y-5 text-lg leading-relaxed text-slate-400">
           <p>
-            Hi, I’m Onat — a software engineer with 7+ years designing and building
+            A software engineer with 7+ years of experience designing and building
             enterprise-grade systems, with a focus on application integration, API
             ecosystems and ERP platforms.
           </p>
           <p>
-            I’m a senior software engineer at{' '}
+            Senior software engineer at{' '}
             <a href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer" className="text-slate-200 underline decoration-brand-rose/40 underline-offset-4 transition-colors hover:text-white hover:decoration-brand-rose">
               Microsoft
             </a>{' '}
-            in Copenhagen, working on Dynamics 365 Business Central. I was head engineer
+            in Copenhagen, working on Dynamics 365 Business Central. Head engineer
             for the Shopify Connector — now a trusted partner app used by 8,000+
-            merchants — designed Business Central’s Model Context Protocol (MCP) server,
-            modernized its API stack to OData v2.0, and own its Dataverse and
-            Dynamics 365 integrations.
+            merchants — and application designer of Business Central’s Model Context
+            Protocol (MCP). Modernized its API stack to OData v2.0 and owns its Dataverse
+            and Dynamics 365 integrations.
           </p>
           <p>
-            Before Microsoft I earned an M.Sc. in Computer Science &amp; Engineering at{' '}
+            An M.Sc. in Computer Science &amp; Engineering from{' '}
             <a href="https://www.dtu.dk/english" target="_blank" rel="noopener noreferrer" className="text-slate-200 underline decoration-brand-rose/40 underline-offset-4 transition-colors hover:text-white hover:decoration-brand-rose">
               DTU
             </a>{' '}
-            and a B.Sc. in Computer Engineering at{' '}
+            and a B.Sc. in Computer Engineering from{' '}
             <a href="https://www.metu.edu.tr" target="_blank" rel="noopener noreferrer" className="text-slate-200 underline decoration-brand-rose/40 underline-offset-4 transition-colors hover:text-white hover:decoration-brand-rose">
               METU
             </a>
-            . Off the clock I build small web apps to chase an idea until it works — a few
-            are below.
+            . Outside work: building small web apps to chase ideas until they work — a
+            few are featured below.
           </p>
 
           <div className="pt-2">
             <p className="mb-3 font-mono text-xs font-medium tracking-wider text-slate-500">
-              tools I reach for
+              tools &amp; technologies
             </p>
             <ul className="flex flex-wrap gap-2">
               {skills.map((s) => (
