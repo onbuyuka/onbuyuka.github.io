@@ -47,11 +47,11 @@ export const featuredProjects: FeaturedProject[] = [
         alt: 'RadioDJ home screen styled as a retro portable stereo',
       },
       {
-        src: 'project-radio-2.webp',
+        src: 'project-radio-3.webp',
         alt: 'RadioDJ station and Spotify playlist selection screen',
       },
       {
-        src: 'project-radio-3.webp',
+        src: 'project-radio-2.webp',
         alt: 'RadioDJ playback screen with live sources and track controls',
       },
     ],
