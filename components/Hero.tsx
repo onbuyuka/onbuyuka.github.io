@@ -83,16 +83,15 @@ export const Hero: React.FC = () => {
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-400 sm:text-xl">
-          Software engineer with 7+ years building enterprise-grade integrations, API
-          ecosystems and ERP platforms — lately focused on connecting business
-          applications for the AI era. Off the clock, I build small web apps nobody
-          asked for.
+          Senior software engineer designing integration platforms, APIs and
+          agent-ready enterprise systems. Lead engineer for Business Central’s
+          Shopify Connector and application architect for its MCP Server.
         </p>
 
         <div className="mt-5 font-mono text-sm text-slate-500">
           <span className="text-slate-600">{'> '}</span>
           currently into <TypeRotator
-            words={['application integration', 'API ecosystems', 'ERP platforms', 'the AI era', 'small web apps']}
+            words={['integration architecture', 'API platforms', 'agent-ready ERP', 'applied AI', 'shipping products']}
           />
         </div>
 
@@ -112,7 +111,7 @@ export const Hero: React.FC = () => {
           <a href="https://github.com/onbuyuka" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="transition-colors hover:text-white">
             <GitHubIcon className="h-5 w-5" />
           </a>
-          <a href="https://linkedin.com/in/onat-buyukakkus-1b3b54a4" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-colors hover:text-white">
+          <a href="https://linkedin.com/in/onatbuyukakkus" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-colors hover:text-white">
             <LinkedInIcon className="h-5 w-5" />
           </a>
           <a href="mailto:onatbuyukakkus@gmail.com" aria-label="Email" className="transition-colors hover:text-white">

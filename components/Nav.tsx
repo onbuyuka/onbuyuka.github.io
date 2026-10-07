@@ -3,6 +3,7 @@ import type { NavLink } from '../types';
 
 const links: NavLink[] = [
   { label: 'About', href: '#about' },
+  { label: 'Impact', href: '#impact' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -34,7 +35,7 @@ export const Nav: React.FC = () => {
             ob
           </span>
         </a>
-        <ul className="flex items-center gap-6 text-sm text-slate-400">
+        <ul className="flex items-center gap-3 text-xs text-slate-400 sm:gap-6 sm:text-sm">
           {links.map((l) => (
             <li key={l.href}>
               <a href={l.href} className="transition-colors hover:text-white">

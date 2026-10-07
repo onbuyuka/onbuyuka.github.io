@@ -2,6 +2,7 @@ import React from 'react';
 import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
+import { Impact } from './components/Impact';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { ScrollProgress } from './components/ScrollProgress';
@@ -13,6 +14,7 @@ const App: React.FC = () => (
     <main>
       <Hero />
       <About />
+      <Impact />
       <Projects />
       <Contact />
     </main>
