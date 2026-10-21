@@ -9,7 +9,7 @@ export interface Project {
 }
 
 export interface FeaturedProject extends Project {
-  visual: 'world-cup' | 'whatsapp' | 'radio';
+  visual?: 'world-cup' | 'whatsapp' | 'radio';
   screenshots?: {
     src: string;
     alt: string;

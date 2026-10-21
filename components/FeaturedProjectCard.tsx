@@ -21,9 +21,9 @@ export const FeaturedProjectCard: React.FC<{ project: FeaturedProject; index: nu
         <div className="relative min-h-64 overflow-hidden border-b border-white/10 bg-ink-950 lg:min-h-full lg:border-b-0 lg:border-r">
           {project.screenshots ? (
             <ProjectScreenshotGallery title={project.title} screenshots={project.screenshots} />
-          ) : (
+          ) : project.visual ? (
             <FeaturedProjectVisual visual={project.visual} />
-          )}
+          ) : null}
         </div>
 
         <div className="flex flex-col p-6 sm:p-8">

@@ -2,6 +2,35 @@ import type { FeaturedProject, Project } from '../types';
 
 export const featuredProjects: FeaturedProject[] = [
   {
+    title: 'Date Night',
+    tagline: 'Private group planning without the group-chat back-and-forth.',
+    description:
+      'A full-stack event planner for building venue shortlists, inviting guests through personal links, collecting five-star votes and turning group preferences into a clear decision.',
+    tags: ['React', 'TypeScript', 'Cloudflare Workers', 'D1'],
+    liveUrl: 'https://date-night.onbuyuka.workers.dev/',
+    repoUrl: 'https://github.com/onbuyuka/date-night',
+    emoji: '✨',
+    screenshots: [
+      {
+        src: 'project-date-night-1.webp',
+        alt: 'Date Night birthday event with a personal greeting and three shortlisted venues',
+      },
+      {
+        src: 'project-date-night-2.webp',
+        alt: 'Date Night organiser workspace with event statistics and themed event cards',
+      },
+      {
+        src: 'project-date-night-3.webp',
+        alt: 'Date Night mobile guest experience for rating venues and viewing the group ranking',
+      },
+    ],
+    evidence: [
+      'Separates organiser accounts from passwordless guest invitations and event-scoped voting.',
+      'Enriches venue shortlists from Maps and public websites without overwriting user decisions.',
+      'Runs on Workers and D1 with migrations, deployment safeguards and end-to-end tests.',
+    ],
+  },
+  {
     title: 'World Cup 2026 — Bracket Predictor',
     tagline: 'Rules-heavy tournament modeling in a static application.',
     description:
