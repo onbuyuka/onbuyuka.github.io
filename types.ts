@@ -1,23 +1,18 @@
 export interface Project {
   title: string;
   tagline: string;
-  description: string;
-  tags: string[];
   liveUrl?: string;
-  repoUrl?: string;
-  emoji: string;
+  repoUrl: string;
+}
+
+export interface ProjectScreenshot {
+  src: string;
+  alt: string;
 }
 
 export interface FeaturedProject extends Project {
-  visual?: 'world-cup' | 'whatsapp' | 'radio';
-  screenshots?: {
-    src: string;
-    alt: string;
-  }[];
+  description: string;
+  liveUrl: string;
+  screenshots: readonly [ProjectScreenshot, ProjectScreenshot, ProjectScreenshot];
   evidence: string[];
-}
-
-export interface NavLink {
-  label: string;
-  href: string;
 }
