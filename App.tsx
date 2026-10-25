@@ -41,8 +41,8 @@ export default function App() {
               </h1>
               <p className="ct-hero-intro">
                 I&apos;m Onat, a senior software engineer at Microsoft.
-                I build integration platforms, agent-ready systems
-                and products of my own.
+                I build business applications, integration platforms and agent-ready systems.
+                On the side, I work on personal projects.
               </p>
               <div className="ct-hero-actions">
                 <a className="ct-button" href="#impact">
@@ -64,8 +64,8 @@ export default function App() {
             <div className="ct-section-label ct-mono"><span>01 / Selected impact</span><span>At Microsoft</span></div>
             <div className="ct-section-intro">
               <h2 id="impact-heading">Behind the scenes.<br /><span>Out in the real world.</span></h2>
-              <p>Public products I&apos;ve helped take from architecture to adoption.
-                Connecting commerce, business applications and AI agents.</p>
+              <p>At Microsoft, I help build Dynamics 365 Business Central&mdash;the ERP software
+                businesses rely on every day.</p>
             </div>
             <div className="ct-impact-list">
               {impact.map((item) => {
