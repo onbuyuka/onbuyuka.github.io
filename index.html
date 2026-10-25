@@ -1,9 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f3f1eb" />
+    <script>
+      (() => {
+        let savedTheme = null;
+        try {
+          savedTheme = window.localStorage.getItem('ob-theme');
+        } catch (error) {
+          console.warn('Unable to read the saved theme preference. Using light mode.', error);
+        }
+        if (savedTheme !== null && savedTheme !== 'light' && savedTheme !== 'dark') {
+          console.warn('Unrecognized theme preference. Using light mode.');
+        }
+        document.documentElement.dataset.theme = savedTheme === 'dark' ? 'dark' : 'light';
+        if (savedTheme === 'dark') {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#171b17');
+        }
+      })();
+    </script>
     <title>ob</title>
     <meta name="description" content="I'm Onat, a senior software engineer at Microsoft. I build business applications, integration platforms and agent-ready systems. On the side, I work on personal projects." />
     <meta name="author" content="Onat Buyukakkus" />

@@ -3,6 +3,7 @@ import { impact } from './data/impact';
 import { dateNightProject, projects, radioProject, worldCupProject } from './data/projects';
 import { Assembly } from './components/Assembly';
 import { ProjectFeature } from './components/ProjectFeature';
+import { ThemeToggle } from './components/ThemeToggle';
 
 const resumeUrl = `${import.meta.env.BASE_URL}Onat_Buyukakkus_resume.pdf`;
 
@@ -55,7 +56,10 @@ export default function App() {
           </div>
           <div className="ct-hero-foot ct-mono">
             <span>Built to connect.</span>
-            <a href="#impact" aria-label="Scroll to selected impact"><ArrowDownIcon /></a>
+            <div className="ct-hero-foot-actions">
+              <ThemeToggle />
+              <a href="#impact" aria-label="Scroll to selected impact"><ArrowDownIcon /></a>
+            </div>
           </div>
         </section>
 
