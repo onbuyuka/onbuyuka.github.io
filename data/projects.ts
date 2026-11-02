@@ -86,6 +86,12 @@ export const radioProject = {
 
 export const projects: Project[] = [
   {
+    title: 'website2mcp',
+    tagline: 'Let AI assistants search websites and use actions their owners explicitly enable.',
+    npmUrl: 'https://www.npmjs.com/package/website2mcp',
+    repoUrl: 'https://github.com/onbuyuka/website2mcp',
+  },
+  {
     title: 'WhatsApp LLM Relay',
     tagline: 'A stateful, web-grounded AI agent over WhatsApp.',
     repoUrl: 'https://github.com/onbuyuka/whatsapp-llm-relay',

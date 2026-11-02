@@ -148,6 +148,11 @@ export default function App() {
                     <p>{project.tagline}</p>
                   </div>
                   <div className="ct-experiment-links">
+                    {project.npmUrl && (
+                      <a className="ct-text-link" href={project.npmUrl} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} npm package`}>
+                        npm package <ExternalLinkIcon />
+                      </a>
+                    )}
                     {project.liveUrl && (
                       <a className="ct-text-link" href={project.liveUrl} target="_blank" rel="noopener noreferrer" aria-label={`Open ${project.title}`}>
                         Open <ExternalLinkIcon />

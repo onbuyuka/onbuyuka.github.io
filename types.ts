@@ -2,6 +2,7 @@ export interface Project {
   title: string;
   tagline: string;
   liveUrl?: string;
+  npmUrl?: string;
   repoUrl: string;
 }
 
