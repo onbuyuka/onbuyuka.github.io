@@ -28,15 +28,9 @@ export function ProjectFeature({
       </figure>
 
       <div className="ct-project-copy">
-        <p className="ct-kicker ct-mono"><span>{number}</span> Independently designed &amp; built</p>
         <h3 id={`project-${number}`}>{displayTitle}</h3>
         <p className="ct-project-tagline">{project.tagline}</p>
         <p className="ct-project-description">{project.description}</p>
-        <ul className="ct-project-facts">
-          {project.evidence.map((item) => (
-            <li key={item}><span aria-hidden="true">+</span>{item}</li>
-          ))}
-        </ul>
         <div className="ct-project-links">
           <a
               className="ct-button"

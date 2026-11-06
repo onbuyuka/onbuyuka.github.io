@@ -15,5 +15,4 @@ export interface FeaturedProject extends Project {
   description: string;
   liveUrl: string;
   screenshots: readonly [ProjectScreenshot, ProjectScreenshot, ProjectScreenshot];
-  evidence: string[];
 }

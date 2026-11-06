@@ -21,11 +21,6 @@ export const dateNightProject = {
       alt: 'Date Night mobile guest experience for rating venues and viewing the group ranking',
     },
   ],
-  evidence: [
-    'Separates organiser accounts from passwordless guest invitations and event-scoped voting.',
-    'Enriches venue shortlists from Maps and public websites without overwriting user decisions.',
-    'Runs on Workers and D1 with migrations, deployment safeguards and end-to-end tests.',
-  ],
 } satisfies FeaturedProject;
 
 export const worldCupProject = {
@@ -49,11 +44,6 @@ export const worldCupProject = {
       alt: 'Live World Cup knockout bracket with Spain as the predicted champion',
     },
   ],
-  evidence: [
-    'Encodes and validates all 495 third-place combinations from FIFA’s published rules.',
-    'Models 48 teams, 104 fixtures, local time zones, prediction sharing and weighted scoring.',
-    'Combines scheduled result snapshots with browser polling and a graceful static fallback.',
-  ],
 } satisfies FeaturedProject;
 
 export const radioProject = {
@@ -76,11 +66,6 @@ export const radioProject = {
       src: 'project-radio-2.webp',
       alt: 'RadioDJ playback screen with live sources and track controls',
     },
-  ],
-  evidence: [
-    'Treats the browser as a conductor around Spotify’s DRM-protected playback SDK.',
-    'Orchestrates track transitions, live data feeds, script generation and text-to-speech.',
-    'Separates station persona, language and voice so the experience can evolve independently.',
   ],
 } satisfies FeaturedProject;
 

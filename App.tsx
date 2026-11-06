@@ -65,7 +65,7 @@ export default function App() {
 
         <section className="ct-impact" id="impact" aria-labelledby="impact-heading">
           <div className="ct-container">
-            <div className="ct-section-label ct-mono"><span>01 / Selected impact</span><span>At Microsoft</span></div>
+            <div className="ct-section-label ct-mono"><span>Selected impact</span></div>
             <div className="ct-section-intro">
               <h2 id="impact-heading">Behind the scenes.<br /><span>Out in the real world.</span></h2>
               <p>At Microsoft, I help build Dynamics 365 Business Central&mdash;the ERP software
@@ -76,7 +76,6 @@ export default function App() {
                 const scope = item.scope;
                 return (
                   <article className="ct-impact-row" key={item.index}>
-                    <span className="ct-impact-number ct-mono">{item.index}</span>
                     <div className="ct-impact-title">
                       <p className="ct-mono">{item.label}</p>
                       <h3>{item.title}</h3>
@@ -107,7 +106,7 @@ export default function App() {
         </section>
 
         <section className="ct-projects ct-container" id="projects" aria-labelledby="projects-heading">
-          <div className="ct-section-label ct-mono"><span>02 / Independent work</span><span>From idea to everyday use</span></div>
+          <div className="ct-section-label ct-mono"><span>Independent work</span></div>
           <div className="ct-section-intro">
             <h2 id="projects-heading">Systems are interesting.<br /><span>People are the point.</span></h2>
             <p>Outside work, I follow an idea all the way through:
@@ -132,19 +131,12 @@ export default function App() {
             caption="Real application. Home, playlist selection, then playback."
             accessNote="Desktop browser and Spotify Premium required. Access is limited to allow-listed accounts."
           />
-          <div className="ct-experiments" id="experiments" aria-labelledby="experiments-heading">
-            <div className="ct-experiment-heading">
-              <h3 id="experiments-heading">More things I&apos;ve made.</h3>
-              <p>Other ideas I&apos;ve followed through.</p>
-            </div>
-            <ol className="ct-experiment-list" start={4}>
-              {projects.map((project, index) => (
+          <div className="ct-experiments" id="experiments">
+            <ul className="ct-experiment-list" aria-label="Other projects">
+              {projects.map((project) => (
                 <li className="ct-experiment-row" key={project.title}>
-                  <span className="ct-experiment-number ct-mono" aria-hidden="true">
-                    {String(index + 4).padStart(2, '0')}
-                  </span>
                   <div>
-                    <h4>{project.title}</h4>
+                    <h3>{project.title}</h3>
                     <p>{project.tagline}</p>
                   </div>
                   <div className="ct-experiment-links">
@@ -164,7 +156,7 @@ export default function App() {
                   </div>
                 </li>
               ))}
-            </ol>
+            </ul>
             <div className="ct-more-work">
               <p>There&apos;s more where that came from.</p>
               <a className="ct-text-link" href="https://github.com/onbuyuka" target="_blank" rel="noopener noreferrer">
